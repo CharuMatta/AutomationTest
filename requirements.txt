@@ -1,0 +1,3 @@
+selenium==3.141.0
+FIREFOX==83.0
+geckodriver==0.28.0
