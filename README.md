@@ -1,23 +1,29 @@
 #Introduction
-test_uer_story1.py:- This script will check KiwiSaver Retirement Calculator all fields in the calculator have got the information icon present.
+login.py:- This script will validate user login to Gmail
 .
-test_uer_story2.py:- This script will check KiwiSaver Retirement Calculator users are able to calculate what their KiwiSaver projected balance would be at retirement.
+send_email.py:- This script will check scenario of sending an email.
 
 
 #Installation
-yum install -y python3
+For Windows/Mac:- #please install python3 and add python3 path to system path
+For Linux:- Install Python3- sudo apt install python3, 
+   Now type python, if you getting python-not found.
+   Type- sudo apt-get install python-is-python3
 pip3 install virtualenv
 . venv/bin/activate
 
 pip3 install -r requirements.txt
 
-#MAC OS
-#please download latest firefox and geckodriver for this test and add your geckodriver executable path to config.ini file
+Note: Currently this test cases using firefox,chrome for testing. We are passing broswer dynimacally from command line. We can add new browser anytime.
+python3 ~/git/automation_test/test/login.py browser_name
+For Example:-
+To run:-
+cd automation_test
+python3  test/login.py chrome
+python3 test/login.py firefox
+python3 test/send_email.py chrome
+python3 test/send_email.py firefox
 
-#WINDOWS OS
-#please download latest firefox and geckodriver for this test and add your geckodriver executable and firefox path to system path
+#Using .env file for password.
 
-#ToRun
-python3 ~/git/Westpac_Test/test_uer_story1.py
-python3 ~/git/Westpac_Test/test_uer_story2.py
 
